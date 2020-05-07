@@ -1,0 +1,12 @@
+body {
+    background: #ffbdcb;
+}
+h1 {
+    font-family: 'helvetica', 'sans-serif';
+    font-size: 300%;
+}
+p {
+  font-family: 'helvetica', 'sans-serif';
+  font-size: 80%;
+  padding-left: 20px;
+}
