@@ -6,6 +6,9 @@ var waterLevel = 0;
 
 function setup() {
     createCanvas(800, 600);
+    //alert to give user instructions before timer starts
+    alert("Welcome to the Match Game! \n\nMatch all my favorite foods before the water glass fills up!\n\nWhen you click 'OK' timer on the game will begin. ")
+    
 }
 function draw () {
     clear();
@@ -25,10 +28,10 @@ function draw () {
 
     //water lever rising as timer
     noStroke();
-    waterLevel -= .15;
-    rect(50, 400, 100, waterLevel);
-    if (waterLevel === -260) {
-        alert("You lose! Refresh to try again!");
+    waterLevel -= .25;
+    rect(50, 400, 120, waterLevel);
+    if (waterLevel === -300) {
+        alert("You lose!\n\nClick 'OK' to try again!");
         waterLevel = 0;
     }
     
@@ -36,7 +39,7 @@ function draw () {
     stroke(0, 0, 0);
     strokeWeight(3);
     noFill();
-    rect(50, 400, 100, -260);
+    rect(50, 400, 120, -300);
    
 }
     //creating new water particles
