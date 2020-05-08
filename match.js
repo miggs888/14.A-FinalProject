@@ -14,6 +14,7 @@ function draw () {
     clear();
     background('pink');
 
+    //**************** ALL TIMER ELEMENTS************* */
     //new water particles
     let p = new Particle();
     particles.push(p);
@@ -64,4 +65,6 @@ class Particle {
         fill(30, 144, 255, this.alpha);
         ellipse(this.x, this.y, 10);
     }
+
+    //**************** ALL MEMORY GAME ELEMENTS************* */
 }
